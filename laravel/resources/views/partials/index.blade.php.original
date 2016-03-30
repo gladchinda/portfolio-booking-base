@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>BookingBase</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="css/app.css">
+        <link rel="stylesheet" type="text/css" href="css/animate.min.css">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" type="text/css" href="css/odometer-theme-default.css">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    </head>
+    <body>
+
+        <header id="header" class="animated fadeInDown container-fluid">
+               <div class="row">
+                   <div class="container header-content">
+                    <div class="row">
+                        <div class="col-xs-5 col-xs-offset-0 col-sm-offset-0 col-sm-4 col-md-3">
+                            <a href="/">
+                                <h1 class="text-hide">BookingBase</h1>
+                                <img class="img-padded img-responsive" src="/img/bookingbase-color-logo.png">
+                            </a>
+                        </div>
+                        <nav class="hidden-xs col-sm-offset-2 col-sm-6 col-md-offset-4 col-md-5 col-lg-offset-5 col-lg-4">
+                            <ul class="nav nav-justified" role="navigation">
+                                <li class="active">
+                                    <a href="#" class="text-uppercase">About</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-uppercase">Discover</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-uppercase btn" role="button">Book</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                   </div>
+               </div>
+        </header>
+
+        <div id="main-container" class="container-fluid">
+        	<div id="banner-container" class="row" role="banner">
+        		<div id="banner-header" class="container">
+        			<div class="row">
+        				<div class="col-xs-5 col-xs-offset-0 col-sm-offset-0 col-sm-4 col-md-3">
+        					<a href="/">
+	        					<h1 class="text-hide">BookingBase</h1>
+	        					<img class="img-padded img-responsive" src="/img/bookingbase-white-logo.png">
+	        				</a>
+        				</div>
+        				<nav class="hidden-xs col-sm-offset-2 col-sm-6 col-md-offset-4 col-md-5 col-lg-offset-5 col-lg-4">
+	        				<ul class="nav nav-justified" role="navigation">
+	        					<li class="active">
+	        						<a href="#" class="text-uppercase">About</a>
+	        					</li>
+	        					<li>
+	        						<a href="#" class="text-uppercase">Discover</a>
+	        					</li>
+	        					<li>
+	        						<a href="#" class="text-uppercase btn" role="button">Book</a>
+	        					</li>
+	        				</ul>
+        				</nav>
+        			</div>
+        		</div>
+        		<div id="carousel-container" class="cover-box">
+       				<div class="animated carousel-item cover-box" data-carousel="hotel-rsv">
+       					<div class="container-fluid">
+       						<div class="row">
+            						<div class="carousel-content col-xs-offset-1 col-xs-10 col-md-offset-3 col-md-6 text-center">
+            							<h2 class="carousel-title" role="heading">Hotel Reservations</h2>
+            							<p class="carousel-text">
+            								Are you a hotel or accommodation owner providing an abode for travellers and business persons alike that has unwittingly become subservient to the power of Online Travel Agencies?
+            							</p>
+                                        <a href="#" class="btn btn-learn" role="button">Learn More</a>
+            						</div>
+       						</div>
+       					</div>
+       				</div>
+
+       				<div class="animated carousel-item cover-box" data-carousel="hotel-resort">
+       					<div class="container-fluid">
+       						<div class="row">
+            						<div class="carousel-content col-md-offset-3 col-md-6 text-center">
+            							<h2 class="carousel-title" role="heading">Hotel Reservations</h2>
+            						</div>
+       						</div>
+       					</div>
+       				</div>
+        		</div>
+        	</div>
+        	{{-- <div id="controls" class="row" style="height:30px"></div> --}}
+        	<section id="hotels-worldwide" class="row well-lg">
+        		<div class="col-xs-offset-2 col-xs-8">
+        			<div class="row">
+        				<div class="content-group col-xs-12 col-lg-6">
+        					<span class="head-text center-block text-uppercase text-center">A Membership Of Over</span>
+        					<span class="hotels-count odometer center-block text-center" data-hotels-count="57000"></span>
+        					<span class="hotels-text center-block text-uppercase text-center">Hotels and Resorts</span>
+        				</div>
+        				<div class="content-group photos col-xs-12 col-lg-6">
+        					<div class="photo-grid row">
+        						<div class="col-xs-2">
+                                    <img class="img-responsive" src="/img/resort-101.jpg">
+                                </div>
+        						<div class="col-xs-2">
+                                    <img class="img-responsive" src="/img/hotel-100.jpg">
+                                </div>
+        						<div class="col-xs-2">
+                                    <img class="img-responsive" src="/img/resort-102.jpg">
+                                </div>
+        						<div class="col-xs-2">
+                                    <img class="img-responsive" src="/img/resort-100.jpg">
+                                </div>
+        						<div class="col-xs-2">
+                                    <img class="img-responsive" src="/img/resort-101.jpg">
+                                </div>
+        						<div class="col-xs-2">
+                                    <img class="img-responsive" src="/img/hotel-100.jpg">
+                                </div>
+        					</div>
+        					<div class="photo-grid row">
+        						<div class="col-xs-2">
+                                    <img class="img-responsive" src="/img/resort-102.jpg">
+                                </div>
+        						<div class="col-xs-2">
+                                    <img class="img-responsive" src="/img/resort-100.jpg">
+                                </div>
+        						<div class="col-xs-2">
+                                    <img class="img-responsive" src="/img/resort-101.jpg">
+                                </div>
+        						<div class="col-xs-2">
+                                    <img class="img-responsive" src="/img/hotel-100.jpg">
+                                </div>
+        						<div class="col-xs-2">
+                                    <img class="img-responsive" src="/img/resort-102.jpg">
+                                </div>
+        						<div class="col-xs-2">
+                                    <img class="img-responsive" src="/img/resort-100.jpg">
+                                </div>
+        					</div>
+        				</div>
+        			</div>
+        		</div>
+        	</section>
+        	<section id="about-section" class="row">
+        		<article class="main content col-xs-12 col-md-8">
+        			<div class="row">
+        				<div class="col-xs-8 col-xs-offset-2">
+        					<h3 class="article-title text-uppercase">OTA With A Difference</h3>
+        					<p class="article-content text-justify">So many of us have become trapped in a situation where we have to use OTAs because that’s who our potential customers turn to first. The problem is the OTAs know this, and as a result have taken advantage of this by increasing our fees and introducing impossibly restrictive practices where those who benefit are no longer us, but the OTAs themselves.</p>
+                            <p class="article-content text-justify">In a business where rapport, attention to detail and personal service are paramount, OTAs have driven a massive wedge between us and our customers, to the point where services across the board have become commoditized and the intrinsic value of hotel enterprises have reduced steadily over the years. This is a problem and BookingBase has been established to solve it.</p>
+        				</div>
+        			</div>
+        		</article>
+        		<aside class="aside content col-xs-12 col-md-4">
+        			<div class="row">
+        				<div class="col-xs-8 col-xs-offset-2">
+        					<h4 class="text-uppercase text-center aside-title">Our Difference</h4>
+        					<p class="text-justify aside-content">BookingBase offers you all that is good about the major OTAs - worldwide access to customers, but without all the bad stuff: no crippling fees, no restrictive clauses, no contracts and no interference with how you choose to run your business.</p>
+        					<a href="#" class="btn btn-learn" role="button">Learn More</a>
+        				</div>
+        			</div>
+        		</aside>
+        	</section>
+        	<section id="features-section" class="row">
+                <div class="col-lg-3 col-xs-6 col-xs-offset-3 hidden-lg content-mobile-nav"></div>
+        		<div class="col-lg-3 col-xs-12 visible-lg-block content-titles"></div>
+        		<div class="col-lg-9 col-xs-12 feature-contents">
+        			<ul class="list-unstyled">
+        				<li class="active">
+        					<article class="animated fadeIn">
+        						<h6>Customers Worldwide</h6>
+        						<p class="text-justify">Are you a hotel or accommodation owner providing an abode for travellers and business persons alike? BookingBase offers you worldwide access to customers.</p>
+        					</article>
+        				</li>
+        				<li>
+        					<article class="animated fadeIn">
+        						<h6>24 Hour Support</h6>
+        						<p class="text-justify">BookingBase provides 24 hour support and reservations service by rotating world rosters: UAE - SINGAPORE (HK) - SYDNEY and KYIV. We also provide 24/7 online marketing and reservations access.</p>
+        					</article>
+        				</li>
+        				<li>
+        					<article class="animated fadeIn">
+        						<h6>Flexibility</h6>
+        						<p class="text-justify">No onerous contracts, we do not dictate what the hotel’s room rates ought to be. Hotels can pass on some of their significant savings to their clients in any way they want by reducing rates or implementing free benefits and packages.</p>
+        					</article>
+        				</li>
+        				<li>
+        					<article class="animated fadeIn">
+        						<h6>No Extra Charges</h6>
+        						<p class="text-justify">Hotels do not pay onerous commissions to us. Infact they do not pay any commissions to us at all; and on the contrary we carry out a 6-month audit and will discount membership fees if Booking Base does not provide the property at least 4 times the revenue as against fee charges. No need for administration costs for receivables and payables to deal with commissions.</p>
+        					</article>
+        				</li>
+        				<li>
+        					<article class="animated fadeIn">
+        						<h6>No Interference</h6>
+        						<p class="text-justify">Hotels always manage their inventory so no need for allocation of rooms to Bookingbase as demanded by the current OTAs. Hotels deal with their guests directly including but not limited to payments, extensions, etc. We do not charge the hotel’s clients or keep any credit card details (they are the hotel’s clients).</p>
+        					</article>
+        				</li>
+        				<li>
+        					<article class="animated fadeIn">
+        						<h6>Additional Support</h6>
+        						<p class="text-justify">Online support and phone support by the area HUB. Concierge service bookings for corporations and hotels that want to be part of service at no extra charge.</p>
+        					</article>
+        				</li>
+        				<li>
+        					<article class="animated fadeIn">
+        						<h6>Quality Assurance</h6>
+        						<p class="text-justify">Amidst so many free benefits, BookingBase offers the FREE use for 6 months of a REALTIME service quality assurance system software for <a href="http://service-qia.com" target="_blank">(IOS and Android)</a>.</p>
+        					</article>
+        				</li>
+        			</ul>
+        		</div>
+        	</section>
+            <footer id="footer" class="row">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <div class="row">
+                        <div id="copyright" class="col-xs-6 col-lg-3">
+                            <a href="/">
+                                <h3 class="text-hide">BookingBase</h3>
+                                <img class="img-padded img-responsive" src="/img/bookingbase-white-logo.png">
+                            </a>
+                            <div class="copyright-text">&copy {{ date('Y') }} BookingBase</div>
+                        </div>
+                        <div id="footer-nav" class="col-xs-12 visible-lg-block col-lg-5 col-lg-offset-4">
+                            <ul class="nav nav-justifieds" role="navigation">
+                                <li class="active">
+                                    <a href="#" class="footer-link">Copyright</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="footer-link">Terms</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="footer-link">Privacy</a>
+                                </li>
+                                <li class="designer-link">
+                                    <a href="#" class="">
+                                        <span class="sr-only" aria-hidden="true" title="Meet the Designer">9lad</span>
+                                        <img class="logo" src="/img/9lad-design-logo.png">
+                                    </a>
+                                </li>
+                                <li class="social-link">
+                                    <a href="#" class="fb">
+                                        <span class="sr-only" aria-hidden="true" title="Like us on Facebook">Facebook</span>
+                                    </a>
+                                </li>
+                                <li class="social-link">
+                                    <a href="#" class="tw">
+                                        <span class="sr-only" aria-hidden="true" title="Follow us on Twitter">Twitter</span>
+                                    </a>
+                                </li>
+                                <li class="social-link">
+                                    <a href="#" class="ig">
+                                        <span class="sr-only" aria-hidden="true" title="Follow us on Instagram">Instagram</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+        <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> -->
+        <script src="/js/jquery.min.js"></script>
+        <script src="/js/jquery.jcarousel.min.js"></script>
+        <script src="/js/odometer.min.js"></script>
+        <script src="/js/app.js"></script>
+    </body>
+</html>

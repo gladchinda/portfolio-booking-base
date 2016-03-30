@@ -1,0 +1,609 @@
+body {
+	overflow-x: hidden;
+}
+
+#main-container {
+	padding: 0;
+	height: 100%;
+	min-width: 100%;
+	position: absolute;
+	top: 0;
+}
+
+#main-container > .row {
+	margin: 0;
+	width: 100%;
+	position: relative;
+}
+
+.cover-box {
+	position: absolute;
+	height: 100%;
+	left: 0;
+	top: 0;
+	min-width: 100%;
+}
+
+#header {
+	background: #FCFDFD;
+	background: rgba(253,255,255,0.99);
+	box-shadow: 0 1px 2px 0 rgba(36,36,36,0.25);
+	height: 100px;
+	max-height: 160px;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	padding: 0;
+	z-index: 1000;
+	display: none;
+}
+
+#banner-container {
+	background: #202326;
+	height: 100%;
+	min-height: 720px;
+}
+
+#banner-header,
+#header .header-content {
+	position: absolute;
+	top: 100px;
+	z-index: 10;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+}
+
+#header .header-content {
+	top: 35px;
+}
+
+#banner-header img,
+#header .header-content img {
+	top: 7px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	position: absolute;
+}
+
+#banner-header,
+#banner-header img.img-padded,
+#banner-header nav,
+#header .header-content,
+#header .header-content img.img-padded,
+#header .header-content nav {	
+	padding: 0 60px;
+}
+
+#banner-header nav a,
+#header .header-content nav a,
+#footer-nav .nav a {
+	display: inline-block;
+	padding: 0;
+	font: 600 0.75em 'Quicksand';
+	transition: all 0.25s ease-out;
+}
+
+#banner-header nav a,
+#banner-header nav a:visited,
+#banner-header nav a:hover,
+#banner-header nav a:active,
+#banner-header nav a.active,
+#footer-nav .nav a,
+#footer-nav .nav a:visited,
+#footer-nav .nav a:hover,
+#footer-nav .nav a:active,
+#footer-nav .nav a.active {
+	background: transparent;
+	color: #BDBABA;
+}
+
+#header .header-content nav a,
+#header .header-content nav a:visited,
+#header .header-content nav a:hover,
+#header .header-content nav a:active,
+#header .header-content nav a.active {
+	background: transparent;
+	color: #98A8A9;
+}
+
+#banner-header nav a.btn {
+	border: 2px solid #BDBABA;
+	border-radius: 4px;
+	padding: 10px 0;
+	width: 100%;
+}
+
+#header .header-content nav li a.btn {
+	border: 2px solid #63C8D1;
+	background: #63C8D1;
+	border-radius: 4px;
+	padding: 10px 0;
+	width: 100%;
+	color: #FFF;
+}
+
+#banner-header nav a:hover,
+#banner-header nav a.btn:hover,
+#footer-nav .nav a:hover {
+	color: #FAFCFB;
+}
+
+#header .header-content nav a:hover {
+	color: #324645;
+}
+
+#header .header-content nav a.btn:hover {
+	border-color: #6C9692;
+	background: #6C9692;
+}
+
+#banner-header nav a.btn:hover {
+	background: #12878E;
+	border-color: #12878E;
+}
+
+#banner-carousel {
+	position: absolute;
+	height: 100%;
+}
+
+#carousel-container .carousel-item {
+	/* background-color: transparent; */
+	background-position: center center;
+	/* background-repeat: no-repeat; */
+	background-attachment: fixed;
+	background-size: cover;
+	display: none;
+}
+
+/* #carousel-container .carousel-item.visible {
+	z-index: 2;
+} */
+
+#carousel-container .carousel-item[data-carousel='hotel-rsv'] {
+	background-image: url('/img/hotel-reservations.jpg');
+}
+
+#carousel-container .carousel-item[data-carousel='hotel-resort'] {
+	background-image: url('/img/hotels-and-resorts-sprite.jpg');
+}
+
+#carousel-container .carousel-item .container-fluid {
+	display: table;
+	width: 100%;
+	height: 100%;
+}
+
+#carousel-container .carousel-item .container-fluid .row {
+	display: table-row;
+	font-size: 0.95em;
+}
+
+#carousel-container .carousel-item .container-fluid .carousel-content {
+	display: table-cell;
+	vertical-align: middle;
+	position: relative;
+	top: 100px;
+	padding: 0 3.25%;
+}
+
+#carousel-container .carousel-content .carousel-title {
+	font: normal 2.4em 'Trajan Pro';
+	color: #FFF;
+}
+
+#carousel-container .carousel-content .carousel-text {
+	font: normal 1.25em/2em 'Quicksand';
+	color: #D2D2D2;
+}
+
+#hotels-worldwide {
+	min-height: 360px;
+	background: transparent url('/img/noise-clip-bg.png') top left repeat fixed;
+}
+
+#hotels-worldwide .content-group {
+	padding: 60px;
+}
+
+#hotels-worldwide .head-text {
+	padding: 3px 0;
+	margin: 0 40px;
+	border-top: 1px solid #A6B3B3;
+	border-bottom: 1px solid #A6B3B3;
+	font: 400 1.125em 'Quicksand';
+	color: #A6B3B3;
+}
+
+#hotels-worldwide .hotels-count {
+	color: #324645;
+	display: block !important;
+	margin-top: -5px;
+	font: bold 6em 'Bebas';
+}
+
+#hotels-worldwide .hotels-text {
+	color: #324645;
+	position: relative;
+	top: -5px;
+	font: 400 1.8em 'Quicksand';
+}
+
+#hotels-worldwide .content-group.photos {
+	padding: 80px;
+}
+
+#hotels-worldwide .photo-grid {
+	position: relative;
+	top: 15px;
+	margin: 3px auto;
+}
+
+#hotels-worldwide .photo-grid > div {
+	padding: 5px;
+}
+
+#hotels-worldwide .photo-grid img.img-responsive {
+	border-radius: 10%;
+	box-shadow: 0 1px 2px 0 rgba(36,36,36,0.9);
+}
+
+#about-section .content {
+	height: 560px;
+	padding: 80px 0;
+}
+
+#about-section .content.main {
+	background: #F4F7F7;
+	border-top: 1px solid #A6B3B3;
+	border-bottom: 1px solid #A6B3B3;
+}
+
+#about-section .content.main .article-title {
+	margin-top: 10px;
+	font: 400 2.25em 'Quicksand';
+	color: #6C9692;
+}
+
+#about-section .content.main .article-content {
+	font: 400 1em/2em 'Quicksand';
+	color: #404F60;
+}
+
+#about-section .content.aside {
+	background: #324645;
+	color: #FFF;
+}
+
+#about-section .content.aside .aside-title {
+	margin-top: 20px;
+	font: 900 1.25em 'Quicksand';
+}
+
+#about-section .content.aside .aside-content {
+	margin-top: 30px;
+	font: 100 1em/2em 'Quicksand';
+	color: #F4F7F7;
+}
+
+#about-section .content.aside .btn-learn,
+#carousel-container .carousel-content .btn-learn {
+	border: 2px solid #FFF;
+	border-radius: 5px;
+	color: #FFF;
+	background: #6C9692;
+	display: block;
+	text-align: center;
+	padding: 20px;
+	width: 150px;
+	font: 600 1.2em 'Quicksand';
+	margin: 50px auto;
+	transition: all 0.5s ease-out;
+}
+
+#carousel-container .carousel-content .btn-learn {
+	background: transparent;
+	font-size: 1.35em;
+	padding: 22px;
+	width: 160px;
+}
+
+#about-section .content.aside .btn-learn:hover {
+	background: #32A7AE;
+}
+
+#carousel-container .carousel-content .btn-learn:hover {
+	background: #32A7AE;
+	border-color: transparent;
+}
+
+#features-section {
+	height: 400px;
+	/* max-height: 400px; */
+	min-height: 400px;
+	/* overflow: hidden; */
+}
+
+#features-section .content-titles {
+	border-right: 2px dashed #D6E3E3;
+	height: inherit;
+	padding: 50px 70px;
+}
+
+#features-section .content-mobile-nav {
+	padding: 50px 0;
+	margin-bottom: -100px;
+}
+
+#features-section .content-mobile-nav li {
+	display: inline-block;
+	margin: 0 5px;
+}
+
+#features-section .content-mobile-nav li .glyphicon,
+#features-section .content-mobile-nav li a {
+	color: #C6DBDB;
+	text-decoration: none;
+	transition: all 0.25s ease-out;
+}
+
+#features-section .content-mobile-nav li.active .glyphicon,
+#features-section .content-mobile-nav li.active a {
+	color: #324645;
+	transform: scale(1.25);
+}
+
+#features-section .content-titles h5 {
+	margin-bottom: 35px;
+	font: 600 1.5em 'Quicksand';
+	color: #324645;
+}
+
+#features-section .content-titles li {
+	position: relative;
+	right: 12px;
+	margin-bottom: 5px;
+}
+
+#features-section .content-titles li .glyphicon,
+#features-section .content-titles li a {
+	color: #A6B3B3;
+	transition: all 0.25s ease-out;
+}
+
+#features-section .content-titles li .glyphicon {
+	font-size: 0.5em;
+	position: relative;
+	right: 5px;
+	visibility: hidden;
+	transform: scale(0.8);
+}
+
+#features-section .content-titles li a {
+	font: 600 0.75em/1.8em 'Quicksand';
+	text-decoration: none;
+}
+
+#features-section .content-titles li.active .glyphicon,
+#features-section .content-titles li.active a {
+	color: #324645;
+}
+
+#features-section .content-titles li.active .glyphicon {
+	visibility: visible;
+}
+
+#features-section .feature-contents li {
+	display: none;
+	padding: 80px 60px;
+}
+
+#features-section .feature-contents li.active {
+	display: block;
+}
+
+#features-section .feature-contents li h6 {
+	margin-bottom: 20px;
+	font: 400 1.8em 'Quicksand';
+	color: #6C9692;
+}
+
+#features-section .feature-contents li article p {
+	font: 400 1.2em/1.8em 'Quicksand';
+	color: #324645;
+}
+
+#footer {
+	min-height: 150px;
+	background: #324645;
+	display: table;
+}
+
+#copyright {
+	display: table;
+	padding: 22px 0;
+}
+
+#copyright .copyright-text {
+	color: #C4C3C3;
+	font: 500 1em 'Quicksand';
+	display: table-cell;
+	padding-top: 7px;
+}
+
+#copyright a {
+	display: table-row;
+}
+
+#copyright a img {
+	display: table-cell;
+	width: 60%;
+}
+
+#footer-nav .nav {
+	position: absolute;
+	top: 65px;
+	left: auto;
+	right: 0;
+}
+
+#footer-nav li {
+	display: inline-block;
+	padding-right: 25px;
+}
+
+#footer-nav li.social-link {
+	padding-right: 10px;
+	position: relative;
+	top: 7px;
+}
+
+#footer-nav li:last-child {
+	padding-right: 0 !important;
+}
+
+#footer-nav li a.footer-link {
+	font-size: 1em;
+}
+
+#footer-nav li.social-link a {
+	display: block;
+	width: 25px;
+	height: 25px;
+	margin-top: -8px;
+	opacity: 0.6;
+	filter: alpha(opacity=60);
+	transition: all 0.25s ease-out;
+}
+
+#footer-nav li.social-link a,
+#footer-nav li.social-link a:hover {
+	background-image: url('/img/social-icons-sprite.png');
+}
+
+#footer-nav li.social-link a:hover {
+	opacity: 1;
+	filter: alpha(opacity=100);
+}
+
+#footer-nav li.social-link a.fb {
+	background-position: 0 0;
+}
+
+#footer-nav li.social-link a.tw {
+	background-position: -25px 0;
+	width: 28px;
+}
+
+#footer-nav li.social-link a.ig {
+	background-position: -53px 0;
+}
+
+#footer-nav li.designer-link .logo {
+	transform: scale(0.9);
+	position: relative;
+	top: -1px;
+	opacity: 0.6;
+	filter: alpha(opacity=60);
+}
+
+#footer-nav li.designer-link a:hover .logo {
+	opacity: 1;
+	filter: alpha(opacity=100);
+}
+
+@media screen and (max-width: 479px) {
+	#banner-header img.img-padded,
+	#header .header-content img.img-padded {	
+		padding: 0 10px;
+	}
+
+	#copyright a img {
+		width: 60% !important;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	#header {
+		height: 75px;
+	}
+
+	#header .header-content {
+		top: 20px;
+	}
+
+	#banner-header {
+		top: 50px;
+	}
+
+	#carousel-container .carousel-content {
+		font-size: 60%;
+	}
+
+	#hotels-worldwide .content-group {
+		font-size: 60%;
+	}
+
+	#features-section,
+	#about-section {
+		font-size: 75%;
+	}
+
+	#hotels-worldwide .content-group,
+	#hotels-worldwide .content-group.photos {
+		padding: 10px 0;
+	}
+
+	#hotels-worldwide .head-text {
+		margin: 0 auto;
+		border: 0;
+	}
+
+	#about-section .content {
+		height: auto;
+	}
+
+	#about-section .content.main .article-title {
+		font-size: 1.5em;
+	}
+
+	#features-section .feature-contents li h6 {
+		font-size: 1.4em;
+	}
+
+	#features-section .feature-contents li article > * {
+		text-align: center !important;
+	}
+
+	#copyright .copyright-text {
+		font-size: 0.8em;
+	}
+
+	#copyright a img {
+		width: 50%;
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+	#banner-header img.img-padded,
+	#header .header-content img.img-padded {	
+		padding: 0 30px;
+	}
+
+	#hotels-worldwide .head-text {
+		margin: 0 auto;
+		border: 0;
+	}
+
+	#hotels-worldwide .content-group.photos {
+		margin-top: -100px;
+		padding: 60px 80px;
+	}
+
+	#copyright a img {
+		width: 40%;
+	}
+}
